@@ -1,32 +1,8 @@
-<?php
-// $noinsert=false;
-$insert=false;
-if(isset($_POST['name'])){
-$server="localhost";
-$username="root";
-$password="";
-$con=mysqli_connect($server,$username,$password);
-
-$name=$_POST['name'];
-$email=$_POST['email'];
-$message=$_POST['message'];
-$sql="INSERT INTO `ngo`.`ngo-contactus` (`Name`, `Email`, `Message`, `Date`) VALUES ('$name', '$email', '$message', current_timestamp())";
-
-  if ($con->query($sql) == true) {
-    $insert=true;
-  }
-  else {
-    echo "ERROR: $sql <br> $con->error";
-  }
-  $con->close();
-}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <link rel="stylesheet" href="index.php">
+  <link rel="stylesheet" href="index.html">
   <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
@@ -76,7 +52,7 @@ $sql="INSERT INTO `ngo`.`ngo-contactus` (`Name`, `Email`, `Message`, `Date`) VAL
           </nav>
           <button id="btn"
             class="inline-flex items-center border-0 py-0.5 px-2 bg-yellow-400 focus:outline-none rounded text-black hover:bg-black hover:text-white mt-1 ml-0 md:mt-0 mr-3 zoom">
-             <a href="donateus.php" class="abc">Donate Us</a>
+             <a href="donateus.html" class="abc">Donate Us</a>
             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
               class="w-4 h-4 ml-1" viewBox="0 0 24 24">
               <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -99,7 +75,7 @@ $sql="INSERT INTO `ngo`.`ngo-contactus` (`Name`, `Email`, `Message`, `Date`) VAL
             <div class="flex align-self-center ">
               <button class="inline-flex text-black bg-pink-600 border-0 py-2 px-6 focus:outline-none hover:bg-black hover:text-white rounded-full text-lg font-bold zoom"><a href="#contactus" class="abc">Contact Us</a></button>
               <button
-                class="ml-4 inline-flex text-black bg-yellow-400 border-0 py-2 px-6 focus:outline-none hover:bg-black hover:text-white rounded-full text-lg font-bold zoom"> <a href="donateus.php" class="abc">Donate Us</a></button>
+                class="ml-4 inline-flex text-black bg-yellow-400 border-0 py-2 px-6 focus:outline-none hover:bg-black hover:text-white rounded-full text-lg font-bold zoom"> <a href="donateus.html" class="abc">Donate Us</a></button>
             </div>
           </div>
           <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
@@ -144,7 +120,7 @@ $sql="INSERT INTO `ngo`.`ngo-contactus` (`Name`, `Email`, `Message`, `Date`) VAL
           </div>
         </div>
         <button
-          class="flex mx-auto mt-16 text-gray-900 bg-pink-500 py-2 px-4 font-bold focus:outline-none hover:bg-yellow-500 hover:text-black hover:font-extrabold rounded-3xl text-lg zoom"><a href="donateus.php" class="abcd">Donate Us</a>
+          class="flex mx-auto mt-16 text-gray-900 bg-pink-500 py-2 px-4 font-bold focus:outline-none hover:bg-yellow-500 hover:text-black hover:font-extrabold rounded-3xl text-lg zoom"><a href="donateus.html" class="abcd">Donate Us</a>
         </button>
       </div>
     </section>
@@ -205,7 +181,7 @@ $sql="INSERT INTO `ngo`.`ngo-contactus` (`Name`, `Email`, `Message`, `Date`) VAL
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-info zoom" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-danger zoom"><a href="donateus.php" class="abcd white">Donate Us</a></button>
+                  <button type="button" class="btn btn-danger zoom"><a href="donateus.html" class="abcd white">Donate Us</a></button>
                 </div>
 
               </div>
@@ -260,7 +236,7 @@ $sql="INSERT INTO `ngo`.`ngo-contactus` (`Name`, `Email`, `Message`, `Date`) VAL
                     </div>
                     <div class="modal-footer">
                       <button type="button" class="btn btn-info zoom" data-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-danger zoom"><a href="donateus.php" class="abcd white">Donate Us</a></button>
+                      <button type="button" class="btn btn-danger zoom"><a href="donateus.html" class="abcd white">Donate Us</a></button>
                     </div>
 
                   </div>
@@ -328,7 +304,7 @@ $sql="INSERT INTO `ngo`.`ngo-contactus` (`Name`, `Email`, `Message`, `Date`) VAL
                     </div>
                     <div class="modal-footer">
                       <button type="button" class="btn btn-info zoom" data-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-danger zoom"><a href="donateus.php" class="abcd white">Donate Us</a></button>
+                      <button type="button" class="btn btn-danger zoom"><a href="donateus.html" class="abcd white">Donate Us</a></button>
                     </div>
 
                   </div>
@@ -426,7 +402,7 @@ $sql="INSERT INTO `ngo`.`ngo-contactus` (`Name`, `Email`, `Message`, `Date`) VAL
 
         </div>
         <button
-          class="flex mx-auto mt-16 text-black bg-gray-100 border-0 py-2 px-8 focus:outline-none hover:font-extrabold zoom rounded-full text-lg font-bold"><a href="donateus.php" class="abcd">Donate Us</a></button>
+          class="flex mx-auto mt-16 text-black bg-gray-100 border-0 py-2 px-8 focus:outline-none hover:font-extrabold zoom rounded-full text-lg font-bold"><a href="donateus.html" class="abcd">Donate Us</a></button>
       </div>
     </section>
 
@@ -493,7 +469,7 @@ $sql="INSERT INTO `ngo`.`ngo-contactus` (`Name`, `Email`, `Message`, `Date`) VAL
           </p>
         </div>
         <div class="lg:w-1/2 md:w-2/3 mx-auto">
-          <form action="index.php" method="post">
+          <form action="index.html" method="post">
               <div class="flex flex-wrap -m-2">
             <div class="p-2 w-1/2">
               <div class="relative">
