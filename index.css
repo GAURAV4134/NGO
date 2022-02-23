@@ -1,0 +1,133 @@
+.main {
+  background-color: rgb(192, 6, 121);
+  width: 100%;
+}
+#cur {
+  cursor: pointer;
+  text-decoration: none;
+}
+.yellow {
+  color: yellow;
+}
+.white {
+  color: white;
+}
+#cursor:hover {
+  text-decoration: none;
+}
+.bg {
+  background-color: white;
+}
+.yellowbg {
+  background-color: #fdec02;
+}
+.cur {
+  cursor: pointer;
+}
+.htc {
+  /* height: 400px;
+    width: 600px; */
+  width: 100%;
+}
+/*--------------------------------------------------------*/
+#box1{
+  background-color: black;
+}
+#box2{
+  background-image: url(main.jpg);
+  opacity: 80%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.anitxt{
+  animation: ani 2s 0s infinite;
+}
+@keyframes ani {
+  from{
+    color:yellow;
+  }
+  to{
+    color: aqua;
+  }
+}
+#bc{
+  animation: bcc 1.5s 0s infinite;
+  border: 10px white;
+  border-style: ridge;
+}
+@keyframes bcc {
+  from{
+    border-color: purple
+  }
+  to{
+    border-color: rgb(255, 73, 185);
+  }
+}
+.imga{
+  cursor: pointer;
+  transition: transform;
+  transition-duration: 1s;
+}
+.imga:hover{
+  transform: scale(1.2);
+}
+.bor1{
+  border: 7px aqua;
+  border-style: double ridge;
+}
+.bor2{
+  border: 7px rgb(255, 26, 236);
+  border-style: double ridge;
+}
+.bor3{
+  border: 7px greenyellow;
+  border-style: double ridge;
+}
+.nw{
+  white-space: nowrap;
+}
+.col1{
+  color: aqua;
+}
+.col2{
+  color: greenyellow
+}
+.col3{
+  color: rgb(255, 26, 236);
+}
+.zoom{
+  transition: transform;
+  transition-duration: 0.2s;
+}
+.zoom:hover{
+  transform:scale(1.1);
+}
+.abc{
+  color: black;
+}
+.abc:hover{
+  text-decoration: none;
+  color: white;
+}
+.abcd{
+  color:black;
+}
+.abcd:hover{
+  text-decoration: none;
+  color:black;
+}
+.white{
+  color: white;
+}
+.white:hover
+{
+  color: white;
+}
+.black:hover{
+  color: black;
+}
+.submsg{
+  color: white;
+  font-size: 40px;
+  font-weight: 400;
+}
